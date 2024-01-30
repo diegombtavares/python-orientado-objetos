@@ -132,9 +132,9 @@ print(meu_carro.descricao())  # Saída: Toyota Corolla 2020
 A função property() em Python é usada para criar propriedades de classe, permitindo que métodos sejam chamados implicitamente ao acessar ou definir atributos de um objeto. Ela permite definir métodos getter, setter e deleter para manipular o acesso, a alteração e a remoção de valores de atributos.
 
 ```python
-    @property
-    def ativo(self):
-        return 'verdadeiro' if self._ativo else 'falso'
+@property
+def ativo(self):
+    return 'verdadeiro' if self._ativo else 'falso'
 ```
 
 O classmethod em Python é um decorador usado para definir métodos de classe, que são métodos associados à classe em vez de instâncias individuais. Isso significa que esses métodos têm acesso à classe, não a instâncias específicas, e podem ser chamados usando a própria classe como objeto.
