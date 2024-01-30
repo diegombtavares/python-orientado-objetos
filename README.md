@@ -10,12 +10,12 @@ A instrução `if` em Python é usada para executar uma ação condicionalmente,
 
 Exemplo:
 
-\```python
+```python
 if condition:
     # código a ser executado se a condição for verdadeira
 else:
     # código a ser executado se a condição for falsa
-\```
+```
 
 ### Instrução `for`
 
@@ -23,10 +23,10 @@ A instrução `for` é utilizada para iterar sobre uma sequência (como uma list
 
 Exemplo:
 
-\```python
+```python
 for item in sequence:
     # código a ser executado para cada item na sequência
-\```
+```
 
 ### Instrução `while`
 
@@ -34,10 +34,10 @@ A instrução `while` é usada para repetir um bloco de código enquanto uma con
 
 Exemplo:
 
-\```python
+```python
 while condition:
     # código a ser executado enquanto a condição for verdadeira
-\```
+```
 
 ## Orientação a Objetos em Python
 
@@ -49,7 +49,7 @@ Uma classe é uma estrutura que define o comportamento e as propriedades de um o
 
 Exemplo de definição de classe:
 
-\```python
+```python
 class MyClass:
     def __init__(self, prop1, prop2):
         self.prop1 = prop1
@@ -57,13 +57,13 @@ class MyClass:
 
     def my_method(self):
         # código do método
-\```
+```
 
 Exemplo de criação de objeto:
 
-\```python
+```python
 obj = MyClass(value1, value2)
-\```
+```
 
 ### Métodos de Classe e Métodos Estáticos
 
@@ -73,7 +73,7 @@ obj = MyClass(value1, value2)
 
 Exemplo:
 
-\```python
+```python
 class MyClass:
     @classmethod
     \```
@@ -86,7 +86,7 @@ class MyClass:
     def my_static_method(arg):
         # código do método estático
     \```
-\```
+```
 
 ### Docstrings
 
