@@ -4,6 +4,10 @@ Este README destina-se a fornecer uma visão geral das estruturas de controle de
 
 Leia também: [O que é Python? História, Sintaxe e um Guia para iniciar na Linguagem](https://www.alura.com.br/artigos/python)
 
+## Orientação a objetos
+
+Orientação a objetos é um paradigma de programação que organiza o código em unidades chamadas objetos, que representam entidades do mundo real. Esses objetos têm características (atributos) e comportamentos (métodos), e interagem entre si através de mensagens, permitindo a modelagem de sistemas complexos de forma mais modular, flexível e reutilizável.
+
 ## Estruturas de Controle de Fluxo em Python
 
 ### Instrução `if`
@@ -100,3 +104,48 @@ Exemplo de docstring em uma função:
 def my_function():
     """Esta é uma função de exemplo."""
     # código da função
+```
+
+### Contrutor
+
+Um construtor em Python é um método especial dentro de uma classe que é automaticamente invocado quando um objeto dessa classe é criado. O objetivo principal de um construtor é inicializar os atributos do objeto com valores específicos. O construtor é declarado usando o método __init__(). Aqui está um exemplo simples de uma classe em Python com um construtor:
+
+```python
+class Carro:
+    def __init__(self, marca, modelo, ano):
+        self.marca = marca
+        self.modelo = modelo
+        self.ano = ano
+
+    def descricao(self):
+        return f"{self.marca} {self.modelo} {self.ano}"
+
+# Criando um objeto Carro usando o construtor
+meu_carro = Carro("Toyota", "Corolla", 2020)
+
+# Chamando um método do objeto
+print(meu_carro.descricao())  # Saída: Toyota Corolla 2020
+```
+
+### Property e classmethod
+
+A função property() em Python é usada para criar propriedades de classe, permitindo que métodos sejam chamados implicitamente ao acessar ou definir atributos de um objeto. Ela permite definir métodos getter, setter e deleter para manipular o acesso, a alteração e a remoção de valores de atributos.
+
+```python
+    @property
+    def ativo(self):
+        return 'verdadeiro' if self._ativo else 'falso'
+```
+
+O classmethod em Python é um decorador usado para definir métodos de classe, que são métodos associados à classe em vez de instâncias individuais. Isso significa que esses métodos têm acesso à classe, não a instâncias específicas, e podem ser chamados usando a própria classe como objeto.
+
+```python
+class Matematica:
+    @classmethod
+    def soma(cls, a, b):
+        return a + b
+
+# Uso da classe Matematica
+resultado = Matematica.soma(5, 3)
+print(resultado)  # Saída: 8
+```
