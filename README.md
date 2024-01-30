@@ -1,4 +1,4 @@
-# README: Condições em Python e Orientação a Objetos
+# Condições em Python e Orientação a Objetos
 
 Este README destina-se a fornecer uma visão geral das estruturas de controle de fluxo em Python, incluindo instruções `for`, `if`, `while`, e sua aplicação na orientação a objetos.
 
