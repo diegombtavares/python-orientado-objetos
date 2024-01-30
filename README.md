@@ -2,6 +2,8 @@
 
 Este README destina-se a fornecer uma visão geral das estruturas de controle de fluxo em Python, incluindo instruções `for`, `if`, `while`, e sua aplicação na orientação a objetos.
 
+Leia também: [O que é Python? História, Sintaxe e um Guia para iniciar na Linguagem](https://www.alura.com.br/artigos/python)
+
 ## Estruturas de Controle de Fluxo em Python
 
 ### Instrução `if`
