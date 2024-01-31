@@ -127,7 +127,7 @@ meu_carro = Carro("Toyota", "Corolla", 2020)
 print(meu_carro.descricao())  # Saída: Toyota Corolla 2020
 ```
 
-### Property e classmethod
+### Property
 
 A função property() em Python é usada para criar propriedades de classe, permitindo que métodos sejam chamados implicitamente ao acessar ou definir atributos de um objeto. Ela permite definir métodos getter, setter e deleter para manipular o acesso, a alteração e a remoção de valores de atributos.
 
@@ -136,6 +136,8 @@ A função property() em Python é usada para criar propriedades de classe, perm
 def ativo(self):
     return 'verdadeiro' if self._ativo else 'falso'
 ```
+
+### classmethod
 
 O classmethod em Python é um decorador usado para definir métodos de classe, que são métodos associados à classe em vez de instâncias individuais. Isso significa que esses métodos têm acesso à classe, não a instâncias específicas, e podem ser chamados usando a própria classe como objeto.
 
@@ -150,6 +152,16 @@ resultado = Matematica.soma(5, 3)
 print(resultado)  # Saída: 8
 ```
 
+### abstractmethod
+
+abstractmethod é um decorador fornecido pelo módulo abc (Abstract Base Classes) em Python, que é usado para definir métodos abstratos em classes. Um método abstrato é um método que não tem implementação na classe base, mas deve ser implementado em todas as subclasses concretas.
+
+Ao marcar um método com @abstractmethod, você está indicando que todas as subclasses devem fornecer sua própria implementação desse método. Se uma classe derivada não implementar um método marcado como abstrato, uma exceção TypeError será gerada em tempo de execução. Esse mecanismo é útil para definir interfaces em Python, garantindo que todas as classes que herdam de uma classe abstrata implementem certos métodos.
+
 ### Herança
 
 Em Python, herança é um conceito de programação orientada a objetos onde uma classe pode herdar atributos e métodos de outra classe, conhecida como classe pai ou superclasse. Isso permite a reutilização de código e a criação de hierarquias de classes, onde as subclasses podem estender ou modificar o comportamento da superclasse.
+
+### Polimorfismo
+
+Em Python, polimorfismo refere-se à capacidade de objetos de diferentes classes responderem ao mesmo método de forma distinta, permitindo que um único método tenha comportamentos diferentes dependendo do tipo do objeto que o está chamando. Isso promove flexibilidade e reutilização de código, pois permite que diferentes tipos de objetos possam ser tratados de maneira uniforme através de interfaces comuns.
