@@ -149,3 +149,7 @@ class Matematica:
 resultado = Matematica.soma(5, 3)
 print(resultado)  # Saída: 8
 ```
+
+### Herança
+
+Em Python, herança é um conceito de programação orientada a objetos onde uma classe pode herdar atributos e métodos de outra classe, conhecida como classe pai ou superclasse. Isso permite a reutilização de código e a criação de hierarquias de classes, onde as subclasses podem estender ou modificar o comportamento da superclasse.
